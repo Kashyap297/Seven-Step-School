@@ -1,4 +1,3 @@
-// Include the common header
 document.addEventListener("DOMContentLoaded", () => {
     // Load Header
     const headerElement = document.getElementById("header");
@@ -12,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 const navLinks = document.querySelectorAll(".nav-link");
                 navLinks.forEach((link) => {
                     if (link.href === window.location.href) {
-                        link.classList.add("text-[#DF8B3D]", "font-bold");
+                        link.classList.add("font-bold", "text-[#DF8B3D]");
+                        link.classList.remove("font-semibold"); // Remove default weight
                         const indicator = link.querySelector(".indicator");
                         if (indicator) indicator.classList.remove("hidden");
                     } else {
-                        link.classList.remove("text-[#DF8B3D]", "font-bold");
+                        link.classList.add("font-semibold"); // Default weight for inactive links
+                        link.classList.remove("font-bold", "text-[#DF8B3D]");
                         const indicator = link.querySelector(".indicator");
                         if (indicator) indicator.classList.add("hidden");
                     }
