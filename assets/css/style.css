@@ -5,3 +5,16 @@
   text-decoration: none;
   list-style: none;
 }
+/* For all browsers */
+body {
+  overflow: auto; /* Keep scrolling functionality */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+body {
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
