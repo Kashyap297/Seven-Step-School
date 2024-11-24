@@ -108,3 +108,8 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #A023B0) border-box;
   z-index: -10;
 }
+
+.clip-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+}
