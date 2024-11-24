@@ -18,3 +18,93 @@ body {
   -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
+
+.aclass::before,
+.aclass::after {
+  content: "";
+  position: absolute;
+  border-radius: 40px; /* Match card's border radius */
+  pointer-events: none;
+  z-index: 10;
+}
+
+.aclass::before {
+  top: 4.25rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #df8b3d, rgba(255, 255, 255, 0)) border-box;
+  z-index: -0;
+}
+
+.aclass::after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #df8b3d) border-box;
+  z-index: -10;
+}
+
+.bclass::before,
+.bclass::after {
+  content: "";
+  position: absolute;
+  border-radius: 40px; /* Match card's border radius */
+  pointer-events: none;
+  z-index: 10;
+}
+
+.bclass::before {
+  top: 4.25rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #35AB14, rgba(255, 255, 255, 0)) border-box;
+  z-index: -0;
+}
+
+.bclass::after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #35AB14) border-box;
+  z-index: -10;
+}
+
+.cclass::before,
+.cclass::after {
+  content: "";
+  position: absolute;
+  border-radius: 40px; /* Match card's border radius */
+  pointer-events: none;
+  z-index: 10;
+}
+
+.cclass::before {
+  top: 4.25rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #A023B0, rgba(255, 255, 255, 0)) border-box;
+  z-index: -0;
+}
+
+.cclass::after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #A023B0) border-box;
+  z-index: -10;
+}
