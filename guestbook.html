@@ -84,6 +84,91 @@
         <img src="assets/images/breadcrumb-cloud.png" alt="">
       </div>
     </div>
+
+    <section class="guest-form mt-20 py-44 relative">
+      <div class="absolute left-10 top-20 -z-10">
+        <img src="assets/images/guestbook-bg.png" alt="">
+      </div>
+      <div class="container max-w-[1440px] mx-auto">
+        <h1 class="text-5xl font-medium font-fredoka text-[#A023B0] leading-tight ">
+          Guest
+          <span class="relative"> Book<img src="assets/images/snake5.png" alt="Vector Design"
+              class="absolute right-0 -bottom-5" /></span>
+        </h1>
+        <div class="my-20 pe-12">
+          <form class="space-y-5 ">
+            <!-- Top Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div>
+                <input id="full-name" type="text" placeholder="Full Name"
+                  class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+              <div>
+                <input id="email" type="email" placeholder="Email ID"
+                  class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+              <div>
+                <input id="mobile" type="text" placeholder="Mobile No"
+                  class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+            </div>
+
+            <!-- Middle Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div>
+                <input id="mobile" type="text" placeholder="Profession"
+                  class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+              <div>
+                <div class="relative">
+                  <input id="dob" type="date" placeholder="Date Of Birth"
+                    class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                  <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.75 2.56V1C13.75 0.59 13.41 0.25 13 0.25C12.59 0.25 12.25 0.59 12.25 1V2.5H5.75V1C5.75 0.59 5.41 0.25 5 0.25C4.59 0.25 4.25 0.59 4.25 1V2.56C1.55 2.81 0.24 4.42 0.04 6.81C0.02 7.1 0.26 7.34 0.54 7.34H17.46C17.75 7.34 17.99 7.09 17.96 6.81C17.76 4.42 16.45 2.81 13.75 2.56ZM17 8.84H1C0.45 8.84 0 9.29 0 9.84V16C0 19 1.5 21 5 21H13C16.5 21 18 19 18 16V9.84C18 9.29 17.55 8.84 17 8.84ZM6.21 17.21C6.16 17.25 6.11 17.3 6.06 17.33C6 17.37 5.94 17.4 5.88 17.42C5.82 17.45 5.76 17.47 5.7 17.48C5.63 17.49 5.57 17.5 5.5 17.5C5.37 17.5 5.24 17.47 5.12 17.42C4.99 17.37 4.89 17.3 4.79 17.21C4.61 17.02 4.5 16.76 4.5 16.5C4.5 16.24 4.61 15.98 4.79 15.79C4.89 15.7 4.99 15.63 5.12 15.58C5.3 15.5 5.5 15.48 5.7 15.52C5.76 15.53 5.82 15.55 5.88 15.58C5.94 15.6 6 15.63 6.06 15.67L6.21 15.79C6.39 15.98 6.5 16.24 6.5 16.5C6.5 16.76 6.39 17.02 6.21 17.21ZM6.21 13.71C6.02 13.89 5.76 14 5.5 14C5.24 14 4.98 13.89 4.79 13.71C4.61 13.52 4.5 13.26 4.5 13C4.5 12.74 4.61 12.48 4.79 12.29C5.07 12.01 5.51 11.92 5.88 12.08C6.01 12.13 6.12 12.2 6.21 12.29C6.39 12.48 6.5 12.74 6.5 13C6.5 13.26 6.39 13.52 6.21 13.71ZM9.71 17.21C9.52 17.39 9.26 17.5 9 17.5C8.74 17.5 8.48 17.39 8.29 17.21C8.11 17.02 8 16.76 8 16.5C8 16.24 8.11 15.98 8.29 15.79C8.66 15.42 9.34 15.42 9.71 15.79C9.89 15.98 10 16.24 10 16.5C10 16.76 9.89 17.02 9.71 17.21ZM9.71 13.71L9.56 13.83C9.5 13.87 9.44 13.9 9.38 13.92C9.32 13.95 9.26 13.97 9.2 13.98C9.13 13.99 9.07 14 9 14C8.74 14 8.48 13.89 8.29 13.71C8.11 13.52 8 13.26 8 13C8 12.74 8.11 12.48 8.29 12.29C8.38 12.2 8.49 12.13 8.62 12.08C8.99 11.92 9.43 12.01 9.71 12.29C9.89 12.48 10 12.74 10 13C10 13.26 9.89 13.52 9.71 13.71ZM13.21 17.21C13.02 17.39 12.76 17.5 12.5 17.5C12.24 17.5 11.98 17.39 11.79 17.21C11.61 17.02 11.5 16.76 11.5 16.5C11.5 16.24 11.61 15.98 11.79 15.79C12.16 15.42 12.84 15.42 13.21 15.79C13.39 15.98 13.5 16.24 13.5 16.5C13.5 16.76 13.39 17.02 13.21 17.21ZM13.21 13.71L13.06 13.83C13 13.87 12.94 13.9 12.88 13.92C12.82 13.95 12.76 13.97 12.7 13.98C12.63 13.99 12.56 14 12.5 14C12.24 14 11.98 13.89 11.79 13.71C11.61 13.52 11.5 13.26 11.5 13C11.5 12.74 11.61 12.48 11.79 12.29C11.89 12.2 11.99 12.13 12.12 12.08C12.3 12 12.5 11.98 12.7 12.02C12.76 12.03 12.82 12.05 12.88 12.08C12.94 12.1 13 12.13 13.06 12.17L13.21 12.29C13.39 12.48 13.5 12.74 13.5 13C13.5 13.26 13.39 13.52 13.21 13.71Z"
+                        fill="#DF8B3D" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <select id="source"
+                  class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400">
+                  <option value="" disabled selected>Choose an option</option>
+                  <option value="internet">Internet</option>
+                  <option value="friend">Friend</option>
+                  <option value="advertisement">Advertisement</option>
+                </select>
+              </div>
+            </div>
+            <!-- Bottom Row -->
+            <div>
+              <textarea id="message" rows="5" placeholder="Your Message"
+                class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <div class="text-start">
+              <a href=""
+                class="bg-[#35AB14] w-max mt-6 text-white text-[22px]  font-quicksand font-bold flex items-center justify-center px-8 py-3.5 rounded-[17px] hover:bg-green-600 relative border-b-[2px] border-white"
+                style="box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25)">
+                Submit
+                <span class="ml-3 w-[24px] h-[24px] bg-white text-black flex items-center justify-center rounded-full">
+                  <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.68945 0.813347C1.55104 0.810781 1.41525 0.851298 1.30087 0.929293C1.1865 1.00729 1.0992 1.1189 1.05105 1.24869C1.00289 1.37848 0.996273 1.52003 1.0321 1.65375C1.06793 1.78747 1.14443 1.90675 1.25102 1.99508L5.33039 5.48736L1.2485 8.97965C1.17393 9.03401 1.11144 9.10324 1.06496 9.18297C1.01849 9.26269 0.989051 9.35119 0.9785 9.44287C0.967949 9.53455 0.976516 9.62742 1.00366 9.71562C1.0308 9.80382 1.07594 9.88544 1.13621 9.95532C1.19648 10.0252 1.27059 10.0818 1.35385 10.1216C1.4371 10.1614 1.52771 10.1835 1.61994 10.1866C1.71218 10.1896 1.80404 10.1735 1.88972 10.1392C1.97541 10.105 2.05307 10.0533 2.11779 9.98752L6.78425 5.99886C6.85764 5.93617 6.91656 5.85833 6.95697 5.77067C6.99737 5.68302 7.0183 5.58766 7.0183 5.49114C7.0183 5.39463 6.99737 5.29926 6.95697 5.21161C6.91656 5.12396 6.85764 5.04611 6.78425 4.98343L2.11779 0.982166C1.99954 0.876889 1.84773 0.817057 1.68945 0.813347Z"
+                      fill="#010101" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="absolute top-0 right-0">
+        <img src="assets/images/star.png" alt="">
+      </div>
+    </section>
     <!-- footer section -->
     <div class="mt-[15rem]">
       <div id="footer"></div>
