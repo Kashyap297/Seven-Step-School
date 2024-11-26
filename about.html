@@ -88,7 +88,7 @@
     </div>
   </div>
   <!-- welcome Section -->
-  <section class="welcome-section relative pt-40 pb-32 border">
+  <section class="welcome-section relative pt-40 pb-32">
     <div class="container mx-auto max-w-[1440px]">
       <div class="grid grid-cols-2 gap-5">
         <div class="img-part relative">
@@ -205,7 +205,7 @@
       </div>
     </div>
   </section>
-  <section class="history-section py-10">
+  <section class="history-section pt-10 pb-6">
     <div class="container mx-auto max-w-[1440px]">
       <h1 class="text-5xl font-medium font-fredoka text-[#A023B0] leading-tight mb-11">
         School
@@ -216,7 +216,7 @@
         inspire our students to be their best in a quickly changing global community. "Looking beyond the horizons and
         preparing the child for the future" is the underlying idea behind each and every activity undertaken in the
         school. Therefore our endeavour is towards.</p>
-      <div class="shadow-lg my-10 py-10 px-8 rounded-[60px]" style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05)">
+      <div class="shadow-lg my-10 py-8 px-8 rounded-[60px]" style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05)">
         <div class="flex items-baseline ">
           <span><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -239,7 +239,9 @@
                 fill="#0284CE" />
             </svg>
           </span>
-          <p class="ms-3 text-[#7C7C7C] font-quicksand text-lg font-medium">Seven steps school Education seeks to usher in value-based holistic education focusing on acquiring thinking skills and inculcating a lifelong learning acumen that truly prepares the individual for the myriad challenges of life.</p>
+          <p class="ms-3 text-[#7C7C7C] font-quicksand text-lg font-medium">Seven steps school Education seeks to usher
+            in value-based holistic education focusing on acquiring thinking skills and inculcating a lifelong learning
+            acumen that truly prepares the individual for the myriad challenges of life.</p>
         </div>
         <div class="flex items-baseline">
           <span><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -248,42 +250,69 @@
                 fill="#0284CE" />
             </svg>
           </span>
-          <p class="ms-3 text-[#7C7C7C] font-quicksand text-lg font-medium">We stand for a progressive 21st Century education that is rooted in Indian values. Human values are blended into the curriculum of all our educational institutions and we recognise & appreciate students who demonstrate exemplary human values. ‘Education for life’, not just for living, is promoted by us at all levels.</p>
+          <p class="ms-3 text-[#7C7C7C] font-quicksand text-lg font-medium">We stand for a progressive 21st Century
+            education that is rooted in Indian values. Human values are blended into the curriculum of all our
+            educational institutions and we recognise & appreciate students who demonstrate exemplary human values.
+            ‘Education for life’, not just for living, is promoted by us at all levels.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="about-slider">
+  <section class="about-slider py-16 relative border">
+    <div class="absolute left-0 top-0">
+      <img src="assets/images/slider-bg.png" alt="">
+    </div>
     <div class="container mx-auto max-w-[1440px]">
-      <div class="relative overflow-hidden">
+      <div class="relative overflow-x-hidden">
         <!-- Slider Wrapper -->
-        <div class="slider-wrapper flex justify-center" style="transition: transform 0.5s ease-in-out;">
+        <div class="slider-wrapper flex justify-center items-center" style="transition: transform 0.5s ease-in-out;">
           <!-- Slide 1 -->
           <div class="slide">
-            <img src="assets/images/slide1.png" alt="Seven Steps School - Adajan Branch" style="border-radius: 20px; width: 80%;">
-            <p class="text-center mt-4 font-bold">Seven Steps School - Adajan Branch</p>
+            <img src="assets/images/slide1.png" alt="Seven Steps School - Adajan Branch">
+            <p class="text-center mt-7 text-2xl font-fredoka font-medium">Seven Steps School - Adajan <br> Branch</p>
           </div>
           <!-- Slide 2 -->
           <div class="slide">
-            <img src="assets/images/slide2.png" alt="Sunrise Vidyalaya - Godadara Branch" style="border-radius: 20px; width: 80%;">
-            <p class="text-center mt-4 font-bold">Sunrise Vidyalaya - Godadara Branch</p>
+            <img src="assets/images/slide2.png" alt="Sunrise Vidyalaya - Godadara Branch">
+            <p class="text-center mt-7 text-2xl font-fredoka font-medium">Sunrise Vidyalaya - Godadara <br> Branch</p>
           </div>
           <!-- Slide 3 -->
           <div class="slide">
-            <img src="assets/images/slide3.png" alt="Surise Vidyalaya - Dindoli Branch" style="border-radius: 20px; width: 80%;">
-            <p class="text-center mt-4 font-bold">Surise Vidyalaya - Dindoli Branch</p>
+            <img src="assets/images/slide3.png" alt="Surise Vidyalaya - Dindoli Branch">
+            <p class="text-center mt-7 text-2xl font-fredoka font-medium">Surise Vidyalaya - Dindoli <br> Branch</p>
           </div>
         </div>
-      
+
         <!-- Navigation Arrows -->
-        <button class="prev-btn" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: #df8b3d; border: none; border-radius: 50%; width: 40px; height: 40px;">
-          &lt;
+        <button class="prev-btn" style="position: absolute; top: 48%; left: 10px; transform: translateY(-50%); ">
+          <div class="flex items-center justify-center relative">
+            <img src="assets/images/sliderarrow.png" alt="slider-arrow">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="absolute ms-0">
+              <path
+                d="M18.8425 25.1937C19.4063 25.0614 19.9223 24.7756 20.3336 24.368C20.7449 23.9604 21.0354 23.4469 21.1728 22.8844C21.3103 22.3219 21.2893 21.7324 21.1124 21.181C20.9354 20.6297 20.6093 20.1381 20.1701 19.7607C18.1197 17.5544 15.8567 15.3339 13.7071 13.156C15.8567 10.7465 18.0536 8.3654 20.1796 5.93706C22.4567 3.77328 20.6803 0.891386 18.4599 0.617371L7.57483 12.9906L18.8425 25.1937Z"
+                fill="white" />
+              <path
+                d="M12.4079 25.4488C13.7213 25.4016 14.7701 24.3055 14.978 23.1339L6.07717 13.4819C5.96247 13.3518 5.89841 13.1847 5.89667 13.0112C5.89494 12.8378 5.95565 12.6694 6.06772 12.537L14.8362 2.54962C13.9858 0.692932 11.7843 -0.327541 9.85197 1.55277C7.98583 3.57482 2.14174 10 2.14174 10C0.318116 12.0126 0.181108 13.7181 2.22205 15.8772C2.22205 15.8772 7.31497 21.4898 9.85197 24.1449C10.7071 25.1181 11.6095 25.4772 12.4079 25.4488Z"
+                fill="white" />
+            </svg>
+          </div>
         </button>
-        <button class="next-btn" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: #df8b3d; border: none; border-radius: 50%; width: 40px; height: 40px;">
-          &gt;
+        <button class="next-btn" style="position: absolute; top: 48%; right: 10px; transform: translateY(-50%); ">
+          <div class="flex items-center justify-center relative">
+            <img src="assets/images/sliderarrow.png" alt="slider-arrow">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="absolute me-0">
+              <path
+                d="M3.15733 25.1937C2.59362 25.0614 2.07754 24.7756 1.66625 24.368C1.25496 23.9604 0.964514 23.4469 0.827069 22.8844C0.689625 22.3219 0.710548 21.7324 0.887525 21.181C1.0645 20.6297 1.39062 20.1381 1.82977 19.7607C3.88017 17.5544 6.14316 15.3339 8.29277 13.156C6.14316 10.7465 3.94631 8.3654 1.82032 5.93706C-0.456841 3.77328 1.31954 0.891386 3.54001 0.617371L14.425 12.9906L3.15733 25.1937Z"
+                fill="white" />
+              <path
+                d="M9.59206 25.4488C8.27867 25.4016 7.22985 24.3055 7.02198 23.1339L15.9228 13.4819C16.0375 13.3518 16.1015 13.1847 16.1033 13.0112C16.105 12.8378 16.0443 12.6694 15.9322 12.537L7.16371 2.54962C8.01411 0.692932 10.2157 -0.327541 12.148 1.55277C14.0141 3.57482 19.8582 10 19.8582 10C21.6818 12.0126 21.8188 13.7181 19.7779 15.8772C19.7779 15.8772 14.685 21.4898 12.148 24.1449C11.2928 25.1181 10.3905 25.4772 9.59206 25.4488Z"
+                fill="white" />
+            </svg>
+          </div>
         </button>
       </div>
-      
     </div>
   </section>
 

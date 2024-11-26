@@ -243,21 +243,16 @@ body {
 }
 
 .slider-wrapper img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 button {
   cursor: pointer;
-  color: white;
   font-size: 18px;
 }
 
-button:hover {
-  background: #c76f2b;
-}
 .slider-wrapper {
   display: flex;
-  gap: 20px; /* Add some gap between slides */
+  gap: 36px;
   transition: transform 0.5s ease-in-out;
 }
-

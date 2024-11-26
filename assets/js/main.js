@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = document.querySelector(".next-btn");
 
     let currentIndex = 0;
-    const slideWidth = slides[0].offsetWidth + 20; // Include margin if any
+    const slideWidth = slides[0].offsetWidth + 190; // Include margin if any
     const totalSlides = slides.length;
 
     // Function to update the slider position
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Make the slider responsive by recalculating slideWidth on window resize
     window.addEventListener("resize", () => {
-        const updatedSlideWidth = slides[0].offsetWidth + 20;
+        const updatedSlideWidth = slides[0].offsetWidth + 190;
         sliderWrapper.style.transform = `translateX(-${currentIndex * updatedSlideWidth}px)`;
     });
 });
