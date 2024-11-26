@@ -25,7 +25,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- style css -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- custom Tailwind css -->
   <script>
@@ -38,6 +38,10 @@
           fontFamily: {
             quicksand: ["Quicksand", "sans-serif"],
             fredoka: ["Fredoka", "sans-serif"],
+
+          },
+          backgroundImage: {
+            'orange-fade': 'linear-gradient(180deg, #FAA01C 0%, rgba(217, 217, 217, 0) 68.95%)',
           },
         },
       },
@@ -47,13 +51,48 @@
 </head>
 
 <body class="">
-  <!-- Header Section -->
-  <div id="header"></div>
-  <!-- Banner Section -->
-  <section class="banner-section">admission section</section>
+  <div class="max-w-[1920px] relative mx-auto overflow-hidden">
+    <!-- Header Section -->
+    <div class="bg-[#FCF4EC] h-[742px] relative">
+      <div id="header"></div>
+      <section class="breadcrumbs">
+        <div class="container mx-auto max-w-[1440px]">
+          <div class="flex items-center justify-between h-96 mt-5">
+            <h1 class="text-[#A023B0] text-[80px] font-fredoka font-medium leading-tight relative">
+              About
+              <span class="">Us<img src="assets/images/Vector-1.png" alt="Vector Design"
+                  class="absolute right-0 " /></span>
+              <div class="absolute top-36 -right-24">
+                <img src="assets/images/showarrow.png" alt="">
+              </div>
+            </h1>
+            <div class="body relative z-10">
+              <div class="mt-40 ps-20">
+                <img src="assets/images/aboutuser.png" alt="">
+              </div>
+              <div class="absolute top-72 -left-16 -z-0 ">
+                <img src="assets/images/earth-crumbs.png" alt="" class="">
+              </div>
+            </div>
+          </div>
 
-  <!-- footer section -->
-  <div id="footer"></div>
+        </div>
+        <div class="absolute bottom-0 right-0 -z-0">
+          <img src="assets/images/rainbow-bg.png" alt="" class="w-full">
+        </div>
+        <div class="absolute bottom-48 right-48 -z-0">
+          <img src="assets/images/dot3-crumbs.png" alt="" class="w-full">
+        </div>
+      </section>
+      <div class="absolute left-0 bottom-0">
+        <img src="assets/images/breadcrumb-cloud.png" alt="">
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="mt-[15rem]">
+      <div id="footer"></div>
+    </div>
+  </div>
 </body>
 
 </html>
