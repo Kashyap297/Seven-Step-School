@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seven-Step-School</title>
+
+  <!-- favicon icon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- font Quicksand-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+
+  <!-- font Fredoka -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- style css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- custom Tailwind css -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+          fontFamily: {
+            quicksand: ["Quicksand", "sans-serif"],
+            fredoka: ["Fredoka", "sans-serif"],
+
+          },
+          backgroundImage: {
+            'orange-fade': 'linear-gradient(180deg, #FAA01C 0%, rgba(217, 217, 217, 0) 68.95%)',
+          },
+        },
+      },
+    };
+  </script>
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body class="">
+  <div class="max-w-[1920px] relative mx-auto overflow-hidden">
+    <!-- Header Section -->
+    <div class="bg-[#FCF4EC] h-[742px] relative">
+      <div id="header"></div>
+      <section class="breadcrumbs">
+        <div class="container mx-auto ">
+          <div class="flex items-center justify-between h-96 ms-12 mt-5">
+            <h1 class="text-[#A023B0] text-[80px] font-fredoka font-medium leading-tight relative">
+                Prospectus
+              <span class=""><img src="assets/images/Vector-1.png" alt="Vector Design"
+                  class="absolute right-0" /></span>
+              <div class="absolute top-36 -right-[4rem]">
+                <img src="assets/images/showarrow.png" alt="">
+              </div>
+            </h1>
+            <div class="relative z-10">
+              <div class="mt-44 w-100">
+                <img src="assets/images/prospectus-user.png" alt="" class="w-100">
+              </div>
+              <div class="absolute top-72 -left-[8rem] -z-0 ">
+                <img src="assets/images/moonstar.png" alt="" class="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-0 right-0 -z-0">
+          <img src="assets/images/rainbow-bg.png" alt="" class="w-full">
+        </div>
+      </section>
+      <div class="absolute left-0 bottom-0">
+        <img src="assets/images/breadcrumb-cloud.png" alt="">
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="mt-[15rem]">
+      <div id="footer"></div>
+    </div>
+  </div>
+</body>
+
+</html>
