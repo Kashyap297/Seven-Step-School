@@ -76,3 +76,29 @@ document.addEventListener("DOMContentLoaded", () => {
         sliderWrapper.style.transform = `translateX(-${currentIndex * updatedSlideWidth}px)`;
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab-btn");
+    const tabPanes = document.querySelectorAll(".tab-pane");
+  
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        // Remove active classes
+        tabs.forEach((btn) => {
+          btn.classList.remove("bg-[#0284CE]", "text-white");
+          btn.classList.add("text-[#7C7C7C]");
+        });
+  
+        tabPanes.forEach((pane) => pane.classList.add("hidden"));
+  
+        // Add active classes
+        tab.classList.add("bg-[#0284CE]", "text-white");
+        const target = tab.getAttribute("data-tab");
+        document.getElementById(target).classList.remove("hidden");
+      });
+    });
+  
+    // Set the first tab as active by default
+    tabs[0].click();
+  });
+  
