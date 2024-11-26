@@ -234,3 +234,30 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #A023B0) border-box;
   z-index: -10;
 }
+
+
+/* about slider */
+
+.slider-wrapper img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background: #c76f2b;
+}
+.slider-wrapper {
+  display: flex;
+  gap: 20px; /* Add some gap between slides */
+  transition: transform 0.5s ease-in-out;
+}
+
