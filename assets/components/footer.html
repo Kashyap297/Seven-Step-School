@@ -4,7 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seven-Step-School</title>
+
+    <!-- favicon icon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+    <!-- font Quicksand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+
+    <!-- font Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- custom Tailwind css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                    fontFamily: {
+                        quicksand: ["Quicksand", "sans-serif"],
+                        fredoka: ["Fredoka", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -18,7 +58,8 @@
                 <div class="col-span-4 relative">
                     <h3 class="font-fredoka font-medium text-[38px] text-[#A023B0] leading-tight">Do you have Questions
                         <br> and want
-                        to contact us?</h3>
+                        to contact us?
+                    </h3>
                     <p class="font-fredoka font-medium text-[28px] mt-6 relative">Call or visit us.
                         <span class="absolute -bottom-3 left-0"><img src="assets/images/footersnake.png" alt=""></span>
                     </p>
