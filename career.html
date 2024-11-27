@@ -1,93 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven-Step-School</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seven-Step-School</title>
+    <!-- favicon icon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
 
-  <!-- favicon icon -->
-  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <!-- font Quicksand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- font Quicksand-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <!-- font Fredoka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- font Fredoka -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- style css -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- custom Tailwind css -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: "#da373d",
-          },
-          fontFamily: {
-            quicksand: ["Quicksand", "sans-serif"],
-            fredoka: ["Fredoka", "sans-serif"],
-
-          },
-          backgroundImage: {
-            'orange-fade': 'linear-gradient(180deg, #FAA01C 0%, rgba(217, 217, 217, 0) 68.95%)',
+    <!-- custom Tailwind css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              quicksand: ["Quicksand", "sans-serif"],
+              fredoka: ["Fredoka", "sans-serif"],
+            },
+            backgroundImage: {
+              "orange-fade":
+                "linear-gradient(180deg, #FAA01C 0%, rgba(217, 217, 217, 0) 68.95%)",
+            },
           },
         },
-      },
-    };
-  </script>
-  <script src="assets/js/main.js"></script>
-</head>
+      };
+    </script>
+    <script src="assets/js/main.js"></script>
+  </head>
 
-<body class="">
-  <div class="max-w-[1920px] relative mx-auto overflow-hidden">
-    <!-- Header Section -->
-    <div class="bg-[#FCF4EC] h-[742px] relative">
-      <div id="header"></div>
-      <section class="breadcrumbs">
-        <div class="container mx-auto ">
-          <div class="flex items-center justify-between h-96 ms-12 mt-5">
-            <h1 class="text-[#A023B0] text-[80px] font-fredoka font-medium leading-tight relative">
-              Careers With <span class="">Us<img src="assets/images/Vector-1.png" alt="Vector Design"
-                  class="absolute right-0" /></span>
-              <div class="absolute top-36 -right-[4rem]">
-                <img src="assets/images/showarrow.png" alt="">
+  <body class="">
+    <div class="max-w-[1920px] relative mx-auto overflow-hidden">
+      <!-- Header Section -->
+      <div class="bg-[#FCF4EC] h-[742px] relative">
+        <div id="header"></div>
+        <section class="breadcrumbs">
+          <div class="container mx-auto">
+            <div class="flex items-center justify-between h-96 ms-12 mt-5">
+              <h1
+                class="text-[#A023B0] text-[80px] font-fredoka font-medium leading-tight relative"
+              >
+                Careers With
+                <span class=""
+                  >Us<img
+                    src="assets/images/Vector-1.png"
+                    alt="Vector Design"
+                    class="absolute right-0"
+                /></span>
+                <div class="absolute top-36 -right-[4rem]">
+                  <img src="assets/images/showarrow.png" alt="" />
+                </div>
+              </h1>
+              <div class="relative z-10">
+                <div class="mt-44">
+                  <img src="assets/images/career-user.png" alt="" class="" />
+                </div>
+                <div class="absolute top-72 -left-[8rem] -z-0">
+                  <img src="assets/images/moonstar.png" alt="" class="" />
+                </div>
               </div>
-            </h1>
-            <div class="relative z-10">
-              <div class="mt-44 ">
-                <img src="assets/images/career-user.png" alt="" class="">
+            </div>
+          </div>
+          <div class="absolute bottom-0 right-0 -z-0">
+            <img src="assets/images/rainbow-bg.png" alt="" class="w-full" />
+          </div>
+        </section>
+        <div class="absolute left-0 bottom-0">
+          <img src="assets/images/breadcrumb-cloud.png" alt="" />
+        </div>
+      </div>
+
+      <section class="requirement mt-24 relative">
+        <div class="container mx-auto max-w-[1440px]">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="flex-1">
+              <div class="requirement-content">
+                <div
+                  class="shadow-lg my-10 py-8 px-8 pe-10 rounded-[40px] w-[120%] bg-white"
+                  style="box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05)"
+                >
+                  <h3
+                    class="font-fredoka text-[#A023B0] text-3xl font-medium mb-5"
+                  >
+                    Requirement
+                  </h3>
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-baseline">
+                      <span
+                        ><svg
+                          width="17"
+                          height="18"
+                          viewBox="0 0 17 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.4223 7.21114C16.8964 7.94819 16.8964 10.0518 15.4223 10.7889L1.75054 17.6247C0.884301 18.0578 -0.0302437 17.1298 0.415565 16.27L2.75308 11.7619C3.65105 10.0301 3.65105 7.96991 2.75309 6.23812L0.415554 1.73C-0.0302525 0.870231 0.884289 -0.0578566 1.75052 0.375261L15.4223 7.21114Z"
+                            fill="#0284CE"
+                          />
+                        </svg>
+                      </span>
+                      <p
+                        class="ms-3 text-[#7C7C7C] font-quicksand text-[22px] font-medium"
+                      >
+                        <span class="text-black font-semibold"
+                          >Pre Primary
+                        </span>
+                        : PRE-P.T.C/P.T.C/T.T.C
+                      </p>
+                    </div>
+                    <div class="flex items-baseline">
+                      <span
+                        ><svg
+                          width="17"
+                          height="18"
+                          viewBox="0 0 17 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.4223 7.21114C16.8964 7.94819 16.8964 10.0518 15.4223 10.7889L1.75054 17.6247C0.884301 18.0578 -0.0302437 17.1298 0.415565 16.27L2.75308 11.7619C3.65105 10.0301 3.65105 7.96991 2.75309 6.23812L0.415554 1.73C-0.0302525 0.870231 0.884289 -0.0578566 1.75052 0.375261L15.4223 7.21114Z"
+                            fill="#0284CE"
+                          />
+                        </svg>
+                      </span>
+                      <p
+                        class="ms-3 text-[#7C7C7C] font-quicksand text-[22px] font-medium"
+                      >
+                        <span class="text-black font-semibold">Primary </span>
+                        : P.T.C/B.A/B.Com/B.Sc With B.Ed
+                      </p>
+                    </div>
+                    <div class="flex items-baseline">
+                      <span
+                        ><svg
+                          width="17"
+                          height="18"
+                          viewBox="0 0 17 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.4223 7.21114C16.8964 7.94819 16.8964 10.0518 15.4223 10.7889L1.75054 17.6247C0.884301 18.0578 -0.0302437 17.1298 0.415565 16.27L2.75308 11.7619C3.65105 10.0301 3.65105 7.96991 2.75309 6.23812L0.415554 1.73C-0.0302525 0.870231 0.884289 -0.0578566 1.75052 0.375261L15.4223 7.21114Z"
+                            fill="#0284CE"
+                          />
+                        </svg>
+                      </span>
+                      <p
+                        class="ms-3 text-[#7C7C7C] font-quicksand text-[22px] font-medium"
+                      >
+                        <span class="text-black font-semibold">Secondary </span>
+                        : B.A/M.A/B.Com/M.Com/B.Sc/M.Sc With B.Ed
+                      </p>
+                    </div>
+                    <div class="flex items-baseline">
+                      <span
+                        ><svg
+                          width="17"
+                          height="18"
+                          viewBox="0 0 17 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.4223 7.21114C16.8964 7.94819 16.8964 10.0518 15.4223 10.7889L1.75054 17.6247C0.884301 18.0578 -0.0302437 17.1298 0.415565 16.27L2.75308 11.7619C3.65105 10.0301 3.65105 7.96991 2.75309 6.23812L0.415554 1.73C-0.0302525 0.870231 0.884289 -0.0578566 1.75052 0.375261L15.4223 7.21114Z"
+                            fill="#0284CE"
+                          />
+                        </svg>
+                      </span>
+                      <p
+                        class="ms-3 text-[#7C7C7C] font-quicksand text-[22px] font-medium"
+                      >
+                        <span class="text-black font-semibold"
+                          >Higher Secondary
+                        </span>
+                        : B.A/M.A/B.Com/M.Com/B.Sc/M.Sc With B.Ed
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="absolute top-72 -left-[8rem] -z-0 ">
-                <img src="assets/images/moonstar.png" alt="" class="">
+            </div>
+            <div class="flex-1 z-10 ms-20 mt-28">
+              <div class="mission-img">
+                <img src="assets/images/requirement-bg.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="absolute bottom-0 right-0 -z-0">
-          <img src="assets/images/rainbow-bg.png" alt="" class="w-full">
+        <div class="absolute right-0 top-0 -z-10">
+          <img src="assets/images/requirement-b-ring.png" alt="" />
+        </div>
+        <div class="absolute right-[15%] top-10 -z-10">
+          <img src="assets/images/requirement-s-ring.png" alt="" />
         </div>
       </section>
-      <div class="absolute left-0 bottom-0">
-        <img src="assets/images/breadcrumb-cloud.png" alt="">
+      <!-- footer section -->
+      <div class="mt-[15rem]">
+        <div id="footer"></div>
       </div>
     </div>
-    <!-- footer section -->
-    <div class="mt-[15rem]">
-      <div id="footer"></div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
