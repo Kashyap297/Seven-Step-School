@@ -48,15 +48,18 @@
 </head>
 
 <body>
-  <header class="relative z-50">
+  <header class="relative z-40">
     <div
-      class="container mx-auto max-w-[1440px] flex items-center justify-between py-8 border-b-[1px] border-black border-opacity-20">
+      class="container mx-auto px-3 xl:px-0 max-w-[1440px] flex items-center justify-between py-8 border-b-[1px] border-black border-opacity-20">
       <!-- Logo -->
-      <div>
-        <img src="assets/images/logo.png" alt="Logo" class="w-[85px] h-[85px]" />
+      <div class="ms-4 md:ms-0">
+        <div class="flex items-center">
+          <img src="assets/images/logo.png" alt="Logo" class="w-[48px] h-[48px] sm:w-[85px] md:h-[85px]" />
+          <span class="font-fredoka font-medium text-lg md:text-2xl ms-5 lg:hidden">Seven Steps School</span>
+        </div>
       </div>
       <!-- Navigation Links -->
-      <nav class="flex space-x-9 font-quicksand text-[18px] ml-10 leading-[22.5px]">
+      <nav class="hidden lg:flex space-x-4 lg:space-x-9 font-quicksand text-[18px] ml-10 leading-[22.5px]">
         <a href="index.html" class="nav-link relative text-[#DF8B3D] font-semibold">
           Home
           <span
@@ -93,8 +96,9 @@
             class="indicator absolute left-1/2 transform -translate-x-1/2 top-full mt-1 w-1.5 h-1.5 rounded-full bg-[#DF8B3D] hidden"></span>
         </a>
       </nav>
+
       <a href="contact.html"
-        class="bg-[#35AB14] text-white text-[18px] font-quicksand font-semibold flex items-center justify-center px-8 py-2.5 rounded-[17px] hover:bg-green-600 relative border-b-[2px] border-white"
+        class="bg-[#35AB14] text-white text-[18px] font-quicksand font-semibold lg:flex items-center justify-center px-8 py-2.5 rounded-[17px] hover:bg-green-600 relative border-b-[2px] border-white hidden"
         style="box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25)">
         Contact Us
         <span class="ml-3 w-[24px] h-[24px] bg-white text-black flex items-center justify-center rounded-full">
@@ -105,8 +109,69 @@
           </svg>
         </span>
       </a>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden flex items-center">
+        <button id="menu-button" class="text-[#010101] p-3 " onclick="toggleSidebar()">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.6 16.0001C8.6 15.6288 8.7475 15.2727 9.01005 15.0101C9.2726 14.7476 9.62869 14.6001 10 14.6001H18.4C18.7713 14.6001 19.1274 14.7476 19.3899 15.0101C19.6525 15.2727 19.8 15.6288 19.8 16.0001C19.8 16.3714 19.6525 16.7275 19.3899 16.99C19.1274 17.2526 18.7713 17.4001 18.4 17.4001H10C9.62869 17.4001 9.2726 17.2526 9.01005 16.99C8.7475 16.7275 8.6 16.3714 8.6 16.0001ZM0.199997 2.0001C0.199997 1.62879 0.347496 1.2727 0.610047 1.01015C0.872598 0.747598 1.22869 0.600098 1.6 0.600098H18.4C18.7713 0.600098 19.1274 0.747598 19.3899 1.01015C19.6525 1.2727 19.8 1.62879 19.8 2.0001C19.8 2.3714 19.6525 2.7275 19.3899 2.99005C19.1274 3.2526 18.7713 3.4001 18.4 3.4001H1.6C1.22869 3.4001 0.872598 3.2526 0.610047 2.99005C0.347496 2.7275 0.199997 2.3714 0.199997 2.0001ZM0.199997 9.0001C0.199997 8.62879 0.347496 8.2727 0.610047 8.01015C0.872598 7.7476 1.22869 7.6001 1.6 7.6001H18.4C18.7713 7.6001 19.1274 7.7476 19.3899 8.01015C19.6525 8.2727 19.8 8.62879 19.8 9.0001C19.8 9.3714 19.6525 9.7275 19.3899 9.99005C19.1274 10.2526 18.7713 10.4001 18.4 10.4001H1.6C1.22869 10.4001 0.872598 10.2526 0.610047 9.99005C0.347496 9.7275 0.199997 9.3714 0.199997 9.0001Z"
+              fill="#DF8B3D" />
+          </svg>
+
+        </button>
+      </div>
+
+      <!-- Off-canvas Menu -->
+      <div id="offcanvas-menu"
+        class="fixed z-10 h-screen top-0 right-0 w-full bg-white shadow-lg transform translate-x-full transition-transform duration-300">
+        <div class="absolute top-0 left-0 w-full bg-white h-full shadow-lg" id="offCanvasNav">
+          <div class="relative z-40">
+            <div class="flex items-center justify-between py-8 border-b-[1px] border-black border-opacity-20">
+              <div class="ms-4 md:ms-0">
+                <div class="flex items-center">
+                  <img src="assets/images/logo.png" alt="Logo" class="w-[48px] h-[48px] sm:w-[85px] md:h-[85px]" />
+                  <span class="font-fredoka font-medium text-lg md:text-2xl ms-5 lg:hidden">Seven Steps School</span>
+                </div>
+              </div>
+              <div class="flex justify-end p-4">
+                <button id="close-menu" class="text-[#010101]" onclick="toggleSidebar()">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.649 9.00016L17.658 1.99094C18.1141 1.53501 18.1141 0.797821 17.658 0.341947C17.2021 -0.113982 16.4649 -0.113982 16.009 0.341947L8.99992 7.35111L1.99107 0.341947C1.53493 -0.113982 0.798022 -0.113982 0.342103 0.341947C-0.114034 0.797875 -0.114034 1.53501 0.342103 1.99094L7.3509 9.00016L0.342158 16.0093C-0.11398 16.4653 -0.11398 17.2025 0.342158 17.6583C0.450304 17.7668 0.578815 17.8528 0.720306 17.9114C0.861797 17.9701 1.01348 18.0002 1.16664 18C1.46512 18 1.76371 17.8857 1.99112 17.6583L8.99992 10.6492L16.009 17.6583C16.1172 17.7668 16.2457 17.8528 16.3872 17.9114C16.5287 17.97 16.6804 18.0001 16.8335 18C17.132 18 17.4306 17.8857 17.658 17.6583C18.1141 17.2024 18.1141 16.4653 17.658 16.0093L10.649 9.00016Z"
+                      fill="#DF8B3D" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <nav class="flex flex-col p-6 space-y-6 font-quicksand text-center text-[22px] mt-14">
+              <a href="index.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Home</a>
+              <a href="about.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">About Us</a>
+              <a href="academic.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Academic</a>
+              <a href="admission.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Admissions</a>
+              <a href="gallery.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Gallery</a>
+              <a href="kidscorner.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Kid's Corner</a>
+              <a href="guestbook.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Guest Book</a>
+              <a href="contact.html" class="hover:text-[#DF8B3D] font-medium hover:font-bold">Contact Us</a>
+            </nav>
+            <div class="absolute -bottom-[11rem] left-0 -z-10">
+              <img src="/assets/images/mob-bg.png" alt="">
+            </div>
+            <div class="absolute -bottom-[1rem] right-16 -z-10">
+              <img src="/assets/images/mob-dot.png" alt="">
+            </div>
+            <div class="absolute top-40 right-10 -z-10">
+              <img src="/assets/images/mob-blue-zigzag.png" alt="">
+            </div>
+            <div class="absolute top-80 left-10 -z-10">
+              <img src="/assets/images/mob-green-universe.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
+
 </body>
 
 </html>
