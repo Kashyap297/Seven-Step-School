@@ -48,38 +48,45 @@
 </head>
 
 <body>
-    <section class="footer relative mt-40">
-        <div class="absolute right-0 bottom-1 -z-10">
+    <section class="footer relative mt-28 lg:mt-40 ">
+        <div class="absolute right-0 bottom-1 -z-10 hidden md:block">
             <img src="assets/images/footer-bg.png" alt="footer-bg">
         </div>
-        <div class="container mx-auto max-w-[1440px]">
-            <div class="grid grid-cols-12">
-                <!-- Contact Section -->
-                <div class="col-span-4 relative">
-                    <h3 class="font-fredoka font-medium text-[38px] text-[#A023B0] leading-tight">Do you have Questions
-                        <br> and want
+        <div class="absolute right-0 bottom-1 -z-10 md:hidden">
+            <img src="assets/images/sm-footer-bg.png" alt="footer-bg">
+        </div>
+        <div class="container mx-auto max-w-[1440px] px-5 lg:px-0">
+            <div class="grid grid-cols-3 lg:grid-cols-12 ">
+                <div class="col-span-3 lg:col-span-4 relative px-5 lg:px-0">
+                    <h3 class="font-fredoka font-medium text-lg lg:text-[38px] text-[#A023B0] leading-tight">Do you have
+                        Questions
+                        <br class="hidden lg:block"> and want
                         to contact us?
                     </h3>
-                    <p class="font-fredoka font-medium text-[28px] mt-6 relative">Call or visit us.
-                        <span class="absolute -bottom-3 left-0"><img src="assets/images/footersnake.png" alt=""></span>
+                    <p class="font-fredoka font-medium text-[15px] lg:text-[28px] mt-6 relative">Call or visit us.
+                        <span class="absolute -bottom-3 left-0"><img src="assets/images/footersnake.png" alt=""
+                                class="w-[50%] lg:w-full"></span>
                     </p>
-                    <div class="mt-10">
-                        <div class="flex items-center my-6">
+                    <div class="mt-5 lg:mt-10">
+                        <div class="flex items-center my-2 lg:my-6">
                             <div
-                                class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-full shadow-md">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] flex items-center justify-center bg-white rounded-full shadow-md">
+                                <svg width="30" height="30" viewBox="0 0 30 30"
+                                    class="lg:w-[30px] lg:h-[30px] w-[17px] h-[17px]" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M29.1835 22.017L24.9969 17.8304C23.5017 16.3352 20.9598 16.9333 20.3617 18.877C19.9132 20.2228 18.418 20.9704 17.0723 20.6713C14.0818 19.9237 10.0448 16.0361 9.29717 12.8962C8.84861 11.5504 9.74574 10.0552 11.0914 9.60673C13.0352 9.00864 13.6333 6.46679 12.1381 4.97158L7.95149 0.784986C6.75532 -0.261662 4.96106 -0.261662 3.91442 0.784986L1.07352 3.62589C-1.76738 6.61631 1.37256 14.5409 8.40005 21.5684C15.4275 28.5959 23.3522 31.8854 26.3426 28.8949L29.1835 26.054C30.2302 24.8579 30.2302 23.0636 29.1835 22.017Z"
                                         fill="#35AB14" />
                                 </svg>
                             </div>
-                            <span class="font-quicksand font-semibold text-[22px] ms-4">+91 98796 26666</span>
+                            <span class="font-quicksand font-semibold text-[15px] lg:text-[22px] ms-4">+91 98796
+                                26666</span>
                         </div>
-                        <div class="flex items-center my-6">
+                        <div class="flex items-center my-2 lg:my-6">
                             <div
-                                class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-full shadow-md">
-                                <svg width="30" height="24" viewBox="0 0 30 24" fill="none"
+                                class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] flex items-center justify-center bg-white rounded-full shadow-md">
+                                <svg width="30" height="24" viewBox="0 0 30 24"
+                                    class="lg:w-[30px] lg:h-[24px] w-[17px] h-[17px]" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M17.5072 15.3803C16.7608 15.8779 15.8938 16.1409 15 16.1409C14.1062 16.1409 13.2393 15.8779 12.4929 15.3803L0.199746 7.18465C0.131883 7.13928 0.065276 7.09205 0 7.04303L0 20.4725C0 22.0123 1.24951 23.2342 2.7617 23.2342H27.2382C28.778 23.2342 29.9999 21.9847 29.9999 20.4725V7.04297C29.9346 7.09212 29.8678 7.13945 29.7998 7.18488L17.5072 15.3803Z"
@@ -90,76 +97,91 @@
                                 </svg>
                             </div>
                             <span
-                                class="font-quicksand font-semibold text-[22px] ms-4">schoolsevensteps@gmail.com</span>
+                                class="font-quicksand font-semibold text-[15px] lg:text-[22px] ms-4">schoolsevensteps@gmail.com</span>
                         </div>
-                        <div class="flex items-baseline my-6">
+                        <div class="flex items-baseline my-2 lg:my-6">
                             <div
-                                class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-full shadow-md">
-                                <svg width="22" height="30" viewBox="0 0 22 30" fill="none"
+                                class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] flex items-center justify-center bg-white rounded-full shadow-md">
+                                <svg width="22" height="30" viewBox="0 0 22 30"
+                                    class="lg:w-[22px] lg:h-[30px] w-[17px] h-[17px]" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M19.8815 5.13735C18.0608 1.99532 14.8269 0.0757324 11.2307 0.00237305C11.0772 -0.000791016 10.9227 -0.000791016 10.7691 0.00237305C7.17301 0.0757324 3.93911 1.99532 2.11836 5.13735C0.257309 8.34899 0.206391 12.2068 1.98213 15.4571L9.42137 29.0735C9.42471 29.0795 9.42805 29.0856 9.43151 29.0915C9.75881 29.6604 10.3452 30 11.0001 30C11.6549 30 12.2413 29.6604 12.5685 29.0915C12.572 29.0856 12.5753 29.0795 12.5786 29.0735L20.0179 15.4571C21.7935 12.2068 21.7426 8.34899 19.8815 5.13735ZM10.9999 13.5938C8.67372 13.5938 6.7812 11.7013 6.7812 9.37503C6.7812 7.0488 8.67372 5.15628 10.9999 5.15628C13.3262 5.15628 15.2187 7.0488 15.2187 9.37503C15.2187 11.7013 13.3262 13.5938 10.9999 13.5938Z"
                                         fill="#35AB14" />
                                 </svg>
                             </div>
-                            <p class="font-quicksand font-semibold text-[22px] ms-4 leading-relaxed">Opposite Royal
+                            <p class="font-quicksand font-semibold text-[15px] lg:text-[22px] ms-4 leading-relaxed">
+                                Opposite Royal
                                 Titanium, Near <br> Royal Dine
                                 Restaurant, Palanpor <br> canal road, adajan, surat.</p>
                         </div>
                     </div>
-                    <div class="absolute -top-10 -right-16">
+                    <div class="absolute -top-10 -right-16 hidden lg:block">
                         <img src="assets/images/Line 10.png" alt="">
                     </div>
                 </div>
                 <!-- Information Section -->
-                <div class="col-span-4 relative">
-                    <h3 class="text-[28px] font-fredoka font-medium text-[#A023B0] text-center">Information</h3>
-                    <ul class="space-y-4 mt-8 ps-40">
+                <div class="col-span-1 lg:col-span-4 relative justify-self-center lg:justify-self-start mt-5 lg:mt-0">
+                    <h3 class="lg:text-[28px] text-lg font-fredoka font-medium text-[#A023B0] lg:text-end">
+                        Information</h3>
+                    <ul class="space-y-2 lg:space-y-4 mt-2 lg:mt-8 ps-0 lg:ps-40">
                         <li><a href="index.html"
-                                class="font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">Home</a></li>
+                                class="font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">Home</a>
+                        </li>
                         <li><a href="about.html"
-                                class=" font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">About Us</a></li>
+                                class=" font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">About
+                                Us</a></li>
                         <li><a href="academic.html"
-                                class=" font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">Academic</a></li>
+                                class=" font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">Academic</a>
+                        </li>
                         <li><a href="admission.html"
-                                class=" font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">Admissions</a>
+                                class=" font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">Admissions</a>
                         </li>
                         <li><a href="gallery.html"
-                                class=" font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">Gallery</a></li>
+                                class=" font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">Gallery</a>
+                        </li>
                         <li><a href="kidscorner.html"
-                                class=" font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">Kid's Corner</a>
+                                class=" font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">Kid's
+                                Corner</a>
                         </li>
                         <li><a href="guestbook.html"
-                                class=" font-quicksand text-[22px] hover:text-[#A023B0] font-semibold">Guest Book</a>
+                                class=" font-quicksand lg:text-[22px] text-[15px] hover:text-[#A023B0] font-semibold">Guest
+                                Book</a>
                         </li>
                     </ul>
-                    <div class="absolute -top-10 right-20">
+                    <div class="absolute -top-10 -right-20 hidden lg:block">
                         <img src="assets/images/Line 10.png" alt="">
                     </div>
                 </div>
                 <!-- Photo Showcase & Social Links -->
-                <div class="col-span-4">
-                    <h3 class="text-[28px] font-fredoka font-medium text-[#A023B0]">Photo Showcase</h3>
-                    <div class="grid grid-cols-3 gap-3 mb-6 mt-6">
-                        <img src="assets/images/photo1.png" alt="Photo 1" class="w-full" />
-                        <img src="assets/images/photo2.png" alt="Photo 2" class="w-full" />
-                        <img src="assets/images/photo3.png" alt="Photo 3" class="w-full" />
-                        <img src="assets/images/photo4.png" alt="Photo 4" class="w-full" />
-                        <img src="assets/images/photo5.png" alt="Photo 4" class="w-full" />
-                        <img src="assets/images/photo6.png" alt="Photo 4" class="w-full" />
+                <div class="col-span-2 lg:col-span-4 mt-5 lg:mt-0">
+                    <h3
+                        class="lg:text-[28px]  text-lg font-fredoka font-medium text-[#A023B0] text-center lg:text-start">
+                        Photo Showcase</h3>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3 mb-6 mt-6 justify-self-center">
+                        <img src="assets/images/photo1.png" alt="Photo 1" class="lg:w-full w-[77px]" />
+                        <img src="assets/images/photo2.png" alt="Photo 2" class="lg:w-full w-[77px]" />
+                        <img src="assets/images/photo3.png" alt="Photo 3" class="lg:w-full w-[77px]" />
+                        <img src="assets/images/photo4.png" alt="Photo 4" class="lg:w-full w-[77px]" />
+                        <img src="assets/images/photo5.png" alt="Photo 4" class="lg:w-full w-[77px]" />
+                        <img src="assets/images/photo6.png" alt="Photo 4" class="lg:w-full w-[77px]" />
                     </div>
-                    <h3 class="text-[28px] font-fredoka font-medium text-[#A023B0]">Social Links</h3>
+                    <h3 class="lg:text-[28px]  text-lg font-fredoka font-medium text-[#A023B0]">Social Links</h3>
                     <div class="flex space-x-4 my-4">
-                        <div class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-full shadow-md">
-                            <svg width="14" height="24" viewBox="0 0 14 24" fill="none"
+                        <div
+                            class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] flex items-center justify-center bg-white rounded-full shadow-md">
+                            <svg width="14" height="24" viewBox="0 0 14 24"
+                                class="w-[17px] h-[17px] lg:w-[14px] lg:h-[24px]" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.12002 13.5598H1.15002C0.67002 13.5598 0.52002 13.3798 0.52002 12.9298V9.29979C0.52002 8.81979 0.70002 8.66979 1.15002 8.66979H4.12002V6.02979C4.12002 4.82979 4.33002 3.68979 4.93002 2.63978C5.56002 1.55978 6.46002 0.839785 7.60002 0.419785C8.35002 0.149785 9.10002 0.0297852 9.91002 0.0297852H12.85C13.27 0.0297852 13.45 0.209785 13.45 0.629785V4.04979C13.45 4.46979 13.27 4.64979 12.85 4.64979C12.04 4.64979 11.23 4.64979 10.42 4.67979C9.61002 4.67979 9.19002 5.06979 9.19002 5.90979C9.16002 6.80979 9.19002 7.67979 9.19002 8.60979H12.67C13.15 8.60979 13.33 8.78979 13.33 9.26979V12.8998C13.33 13.3798 13.18 13.5298 12.67 13.5298H9.19002V23.3098C9.19002 23.8198 9.04002 23.9998 8.50002 23.9998H4.75002C4.30002 23.9998 4.12002 23.8198 4.12002 23.3698V13.5598Z"
                                     fill="#35AB14" />
                             </svg>
                         </div>
-                        <div class="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-full shadow-md">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        <div
+                            class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] flex items-center justify-center bg-white rounded-full shadow-md">
+                            <svg width="30" height="30" viewBox="0 0 30 30"
+                                class="w-[17px] h-[17px] lg:w-[30px] lg:h-[30px]" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.6367 15C17.6367 16.4562 16.4562 17.6367 15 17.6367C13.5438 17.6367 12.3633 16.4562 12.3633 15C12.3633 13.5438 13.5438 12.3633 15 12.3633C16.4562 12.3633 17.6367 13.5438 17.6367 15Z"
@@ -176,11 +198,15 @@
                 </div>
             </div>
             <!-- Footer Bottom -->
-            <div class="absolute right-0 bottom-0 -z-10">
+            <div class="absolute right-0 bottom-0 -z-10 hidden lg:block">
                 <img src="assets/images/copyright-bg.png" alt="footer-bg">
             </div>
-            <div class="text-white font-quicksand text-[22px] font-semibold py-4 mt-5">
-                <p class="text-center ms-48">Copyright © 2023. All Right Reserved/ By Seven Steps School</p>
+            <div class="absolute right-0 bottom-0 -z-10 lg:hidden">
+                <img src="assets/images/sm-copyright-bg.png" alt="footer-bg">
+            </div>
+            <div class="text-white font-quicksand text-[12px] lg:text-[22px] font-semibold lg:py-4 py-2 mt-5">
+                <p class="text-center ms-16 lg:ms-48">Copyright © 2023. All Right <br class="lg:hidden"> Reserved/ By
+                    Seven Steps School</p>
             </div>
         </div>
     </section>
