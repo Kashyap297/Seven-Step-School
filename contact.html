@@ -183,53 +183,54 @@
     </section>
     <!-- contact section End -->
     <!-- guest-form section Start -->
-    <section class="guest-form mt-20 pt-44 pb-20 relative">
-      <div class="absolute left-10 top-20 -z-10">
+    <section class="guest-form mt-5 md:mt-20 pt-28 md:pt-44 pb-14 md:pb-20 relative">
+      <div class="absolute left-10 top-20 -z-10 hidden md:block">
         <img src="assets/images/guestbook-bg.png" alt="">
       </div>
+      <div class="absolute left-3 top-40 -z-10  md:hidden">
+        <img src="assets/images/mob-contact-bg.png" alt="">
+      </div>
       <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
-        <div class="grid grid-cols-2 gap-10">
-          <div class="forms">
-            <h1 class="text-5xl font-medium font-fredoka text-[#A023B0] leading-tight ">
+        <div class="grid md:grid-cols-2 gap-48 md:gap-10">
+          <div class="forms order-2 md:order-1">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight ">
               Feel Free To
               <span class="relative"> Contact <img src="assets/images/snake4.png" alt="Vector Design"
-                  class="absolute right-0 -bottom-5" /></span>
+                  class="absolute right-0 md:-bottom-5" /></span>
             </h1>
-            <div class="my-20 pe-12">
-              <form class="space-y-5 ">
-                <!-- Top Row -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="md:my-20 py-5 ps-3 md:ps-0 pe-5 md:pe-12">
+              <form class="space-y-3 md:space-y-5 ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
                   <div>
                     <input id="full-name" type="text" placeholder="Full Name"
-                      class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                      class="w-full rounded-[5px] bg-white px-3 py-3 md:py-5 md:px-4 font-quicksand font-medium text-[13px] md:text-base  placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
                   </div>
 
                   <div>
                     <input id="mobile" type="text" placeholder="Mobile No"
-                      class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                      class="w-full rounded-[5px] bg-white px-3 py-3 md:py-5 md:px-4 font-quicksand font-medium text-[13px] md:text-base  placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
                   </div>
                 </div>
-                <!-- Middle Row -->
-                <div class="grid grid-cols-1 gap-6">
+                <div class="grid grid-cols-1 gap-3 md:gap-6">
                   <div>
                     <input id="email" type="email" placeholder="Email ID"
-                      class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                      class="w-full rounded-[5px] bg-white px-3 py-3 md:py-5 md:px-4 font-quicksand font-medium text-[13px] md:text-base  placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400" />
                   </div>
                 </div>
-                <!-- Bottom Row -->
                 <div>
                   <textarea id="message" rows="5" placeholder="Message"
-                    class="w-full rounded-[5px] bg-white py-5 px-4 font-quicksand font-medium text-base placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                    class="w-full rounded-[5px] bg-white px-3 py-3 md:py-5 md:px-4 font-quicksand font-medium text-[13px] md:text-base  placeholder-[#7C7C7C] focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
                 </div>
-                <!-- Submit Button -->
                 <div class="text-start">
                   <a href=""
-                    class="bg-[#35AB14] w-max mt-6 text-white text-[22px]  font-quicksand font-bold flex items-center justify-center px-8 py-3.5 rounded-[17px] hover:bg-green-600 relative border-b-[2px] border-white"
+                    class="bg-[#35AB14] w-max mt-6 text-white text-[12px] md:text-[22px]  font-quicksand font-bold flex items-center justify-center px-3 md:px-8 py-2 md:py-3.5 rounded-[7px] md:rounded-[17px] hover:bg-green-600 relative border-b-[2px] border-white"
                     style="box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25)">
                     Submit
                     <span
-                      class="ml-3 w-[24px] h-[24px] bg-white text-black flex items-center justify-center rounded-full">
-                      <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      class="ml-3 w-[14px] md:w-[24px] h-[14px] md:h-[24px] bg-white text-black flex items-center justify-center rounded-full">
+                      <svg width="8" height="11" class="
+                      md:w-[8px] md:h-[11px] w-[4px] h-[6px]" viewBox="0 0 8 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.68945 0.813347C1.55104 0.810781 1.41525 0.851298 1.30087 0.929293C1.1865 1.00729 1.0992 1.1189 1.05105 1.24869C1.00289 1.37848 0.996273 1.52003 1.0321 1.65375C1.06793 1.78747 1.14443 1.90675 1.25102 1.99508L5.33039 5.48736L1.2485 8.97965C1.17393 9.03401 1.11144 9.10324 1.06496 9.18297C1.01849 9.26269 0.989051 9.35119 0.9785 9.44287C0.967949 9.53455 0.976516 9.62742 1.00366 9.71562C1.0308 9.80382 1.07594 9.88544 1.13621 9.95532C1.19648 10.0252 1.27059 10.0818 1.35385 10.1216C1.4371 10.1614 1.52771 10.1835 1.61994 10.1866C1.71218 10.1896 1.80404 10.1735 1.88972 10.1392C1.97541 10.105 2.05307 10.0533 2.11779 9.98752L6.78425 5.99886C6.85764 5.93617 6.91656 5.85833 6.95697 5.77067C6.99737 5.68302 7.0183 5.58766 7.0183 5.49114C7.0183 5.39463 6.99737 5.29926 6.95697 5.21161C6.91656 5.12396 6.85764 5.04611 6.78425 4.98343L2.11779 0.982166C1.99954 0.876889 1.84773 0.817057 1.68945 0.813347Z"
                           fill="#010101" />
@@ -240,12 +241,12 @@
               </form>
             </div>
           </div>
-          <div class="form-img relative">
+          <div class="form-img relative order-1 md:order-2">
             <img src="assets/images/cont-img.png" alt="" class="absolute -right-[0.85rem] -top-28">
           </div>
         </div>
       </div>
-      <div class="absolute top-[45%] right-14">
+      <div class="absolute top-[45%] right-14 hidden md:block">
         <img src="assets/images/zigzag-orange.png" alt="">
       </div>
     </section>
@@ -253,17 +254,18 @@
     <!-- Map section Start -->
     <section class="map">
       <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
-        <div class="rounded-[50px]">
+        <div class="rounded-[30px] md:rounded-[50px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.6321940666794!2d72.77431201113077!3d21.206765280406135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d82d4d0dcfb%3A0x9d44fcb0c11cd5e5!2sSeven%20Steps%20School!5e0!3m2!1sen!2sin!4v1732743440918!5m2!1sen!2sin"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="w-full rounded-[50px]"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-[194px] md:h-[450px] w-full rounded-[30px] md:rounded-[50px]"></iframe>
         </div>
       </div>
     </section>
     <!-- Map section End -->
     <!-- footer section -->
-    <div class="mt-[15rem]">
+    <div class="mt-[10rem] md:mt-[15rem]">
       <div id="footer"></div>
     </div>
   </div>
