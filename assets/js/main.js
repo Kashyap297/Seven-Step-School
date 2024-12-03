@@ -135,3 +135,45 @@ function toggleSidebar() {
         sidebar.classList.toggle("translate-x-full");
     }
 }
+
+
+// Counter
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Create a function to animate the counter
+    function animateCounter(element, targetValue) {
+        let currentValue = 0;
+        const interval = 50; // Update every 50 milliseconds
+        const increment = Math.ceil(targetValue / 100); // Increment value per interval
+        const counter = setInterval(() => {
+            currentValue += increment;
+            if (currentValue >= targetValue) {
+                currentValue = targetValue;
+                clearInterval(counter);
+            }
+            element.innerText = currentValue + "+";
+        }, interval);
+    }
+
+    // Create an IntersectionObserver to detect when the counter section comes into view
+    const counters = document.querySelectorAll('.entroll h2');
+    const observerOptions = {
+        root: null, // Use the viewport as the root
+        threshold: 0.5 // Trigger when 50% of the element is in view
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const targetValue = parseInt(entry.target.innerText.replace("+", ""));
+                animateCounter(entry.target, targetValue);
+                observer.unobserve(entry.target); // Stop observing after the animation starts
+            }
+        });
+    }, observerOptions);
+
+    // Observe each counter element
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
