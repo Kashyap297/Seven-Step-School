@@ -27,6 +27,7 @@
   <!-- style css -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
+
   <!-- custom Tailwind css -->
   <script>
     tailwind.config = {
@@ -44,7 +45,10 @@
     };
   </script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <script src="assets/js/main.js"></script>
+
 </head>
 
 <body>
@@ -167,7 +171,8 @@
             border-image-source: linear-gradient(to bottom, #33333304, #8b8b8b, #33333300);
             border-image-slice: 1;"></div>
             <h1
-              class="font-fredoka font-medium text-[#A023B0] text-center lg:text-start text-2xl md:text-3xl lg:text-5xl">
+              class="font-fredoka font-medium text-[#A023B0] text-center lg:text-start text-2xl md:text-3xl lg:text-5xl wow animate__fadeInUp"
+              data-wow-delay="0.5s" data-wow-duration="1s">
               Programs
             </h1>
             <p
@@ -432,7 +437,9 @@
         <img src="assets/images/7.png" alt="">
       </div>
       <div class="container mx-auto max-w-[1440px] ">
-        <h1 class="text-2xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight mb-14 lg:mb-20">
+        <h1
+          class="text-2xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight mb-14 lg:mb-20 wow animate__rubberBand"
+          data-wow-delay="1s" data-wow-duration="1s">
           Seven Step School <br class="hidden lg:block">
           <span class="relative">Timing<img src="assets/images/Vector-1.png" alt="Vector Design"
               class="absolute right-0 -bottom-5 w-full" /></span>
@@ -1591,5 +1598,10 @@
     <!-- </div> -->
   </div>
 </body>
+<!-- WOW.js (for triggering animations) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 
 </html>
