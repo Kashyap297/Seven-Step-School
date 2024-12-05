@@ -5,24 +5,29 @@
   text-decoration: none;
   list-style: none;
 }
+
 /* For all browsers */
 body {
-  overflow: auto; /* Keep scrolling functionality */
+  overflow: auto;
+  /* Keep scrolling functionality */
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+  display: none;
+  /* Hide scrollbar in Chrome, Safari, and Edge */
 }
 
 body {
-  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
 }
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+  display: none;
+  -webkit-appearance: none;
 }
 
 
@@ -30,7 +35,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .aclass::after {
   content: "";
   position: absolute;
-  border-radius: 40px; /* Match card's border radius */
+  border-radius: 40px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -60,7 +66,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .bclass::after {
   content: "";
   position: absolute;
-  border-radius: 40px; /* Match card's border radius */
+  border-radius: 40px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -90,7 +97,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .cclass::after {
   content: "";
   position: absolute;
-  border-radius: 40px; /* Match card's border radius */
+  border-radius: 40px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -129,10 +137,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   width: 100%;
   height: 100%;
-  clip-path: inherit; /* Inherit the clip-path to match the hexagon */
+  clip-path: inherit;
+  /* Inherit the clip-path to match the hexagon */
   z-index: -1;
-  background-color: rgba(160, 131, 131, 0.05); /* Shadow layer */
-  filter: blur(8px); /* Adjust blur to enhance shadow effect */
+  background-color: rgba(160, 131, 131, 0.05);
+  /* Shadow layer */
+  filter: blur(8px);
+  /* Adjust blur to enhance shadow effect */
 }
 
 
@@ -141,7 +152,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .welcom-card1::after {
   content: "";
   position: absolute;
-  border-radius: 10px; /* Match card's border radius */
+  border-radius: 10px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -171,7 +183,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .welcom-card2::after {
   content: "";
   position: absolute;
-  border-radius: 10px; /* Match card's border radius */
+  border-radius: 10px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -201,7 +214,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .welcom-card3::after {
   content: "";
   position: absolute;
-  border-radius: 10px; /* Match card's border radius */
+  border-radius: 10px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -226,11 +240,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #35AB14) border-box;
   z-index: -10;
 }
+
 .welcom-card4::before,
 .welcom-card4::after {
   content: "";
   position: absolute;
-  border-radius: 10px; /* Match card's border radius */
+  border-radius: 10px;
+  /* Match card's border radius */
   pointer-events: none;
   z-index: 10;
 }
@@ -276,4 +292,29 @@ button {
   display: flex;
   gap: 36px;
   transition: transform 0.5s ease-in-out;
+}
+
+
+.gradient-border-orange {
+  position: relative;
+  border-radius: 50px;
+  background: white;
+  z-index: 1;
+}
+
+.gradient-border-orange:hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 3px;
+  background: linear-gradient(129.72deg, #DF8B3D 11.29%, rgba(255, 255, 255, 0) 26.17%),
+    linear-gradient(316.82deg, #DF8B3D 12.17%, rgba(255, 255, 255, 0) 27.04%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
 }
