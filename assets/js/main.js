@@ -39,43 +39,43 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const sliderWrapper = document.querySelector(".slider-wrapper");
-    const slides = document.querySelectorAll(".slide");
-    const prevBtn = document.querySelector(".prev-btn");
-    const nextBtn = document.querySelector(".next-btn");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const sliderWrapper = document.querySelector(".slider-wrapper");
+//     const slides = document.querySelectorAll(".slide");
+//     const prevBtn = document.querySelector(".prev-btn");
+//     const nextBtn = document.querySelector(".next-btn");
 
-    let currentIndex = 0;
-    const slideWidth = slides[0].offsetWidth + 190; // Include margin if any
-    const totalSlides = slides.length;
+//     let currentIndex = 0;
+//     const slideWidth = slides[0].offsetWidth + 190; // Include margin if any
+//     const totalSlides = slides.length;
 
-    // Function to update the slider position
-    const updateSlider = () => {
-        sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    };
+//     // Function to update the slider position
+//     const updateSlider = () => {
+//         sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+//     };
 
-    // Go to the next slide
-    nextBtn.addEventListener("click", () => {
-        if (currentIndex < totalSlides - 1) {
-            currentIndex += 1;
-            updateSlider();
-        }
-    });
+//     // Go to the next slide
+//     nextBtn.addEventListener("click", () => {
+//         if (currentIndex < totalSlides - 1) {
+//             currentIndex += 1;
+//             updateSlider();
+//         }
+//     });
 
-    // Go to the previous slide
-    prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex -= 1;
-            updateSlider();
-        }
-    });
+//     // Go to the previous slide
+//     prevBtn.addEventListener("click", () => {
+//         if (currentIndex > 0) {
+//             currentIndex -= 1;
+//             updateSlider();
+//         }
+//     });
 
-    // Make the slider responsive by recalculating slideWidth on window resize
-    window.addEventListener("resize", () => {
-        const updatedSlideWidth = slides[0].offsetWidth + 190;
-        sliderWrapper.style.transform = `translateX(-${currentIndex * updatedSlideWidth}px)`;
-    });
-});
+//     // Make the slider responsive by recalculating slideWidth on window resize
+//     window.addEventListener("resize", () => {
+//         const updatedSlideWidth = slides[0].offsetWidth + 190;
+//         sliderWrapper.style.transform = `translateX(-${currentIndex * updatedSlideWidth}px)`;
+//     });
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".tab-btn");

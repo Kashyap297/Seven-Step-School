@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
 
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- font Fredoka -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,7 +62,7 @@
     <div class="bg-[#FCF4EC] lg:h-[742px] h-[468px] relative">
       <div id="header"></div>
       <section class="breadcrumbs">
-        <div class="container mx-auto max-w-[1440px]">
+        <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
           <div class="flex items-center justify-between h-52 lg:h-96 mt-5">
             <h1
               class="text-[#A023B0] lg:text-[80px] text-[26px] font-fredoka font-medium leading-tight relative ps-5 lg:ps-0">
@@ -90,7 +93,7 @@
     </div>
     <!-- painting section start -->
     <section class="painting py-10 md:py-28 relative">
-      <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
+      <div class="container max-w-[1440px] mx-auto px-5 xxl:px-0">
         <div class="flex items-center justify-between">
           <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight relative">
             Painting
@@ -113,23 +116,80 @@
           </a>
         </div>
         <div class="painting-images mt-8 md:mt-20">
-          <div class="flex justify-between items-center gap-6">
-            <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
-              <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/paint1.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+          <div class="md:hidden">
+            <div class="swiper mySwiper" style="transition: transform 0.5s ease-in-out;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paint1.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paint2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paint3.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paint2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paint1.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paint2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
-              <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/paint2.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+            <!-- <div class="swiper-pagination-2 bottom-[50%] absolute"></div> -->
+          </div>
+          <div class="hidden md:block">
+            <div class="flex justify-between items-center gap-6">
+              <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
+                <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/paint1.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
               </div>
-            </div>
-            <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
-              <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/paint3.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+              <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/paint2.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
+              </div>
+              <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/paint3.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
               </div>
             </div>
           </div>
@@ -145,7 +205,7 @@
       <div class="absolute left-0 top-[23%] hidden md:block">
         <img src="assets/images/craft-bg.png" alt="">
       </div>
-      <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
+      <div class="container max-w-[1440px] mx-auto px-5 xxl:px-0">
         <div class="flex items-center justify-between">
           <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight relative">
             Crafting
@@ -168,23 +228,81 @@
           </a>
         </div>
         <div class="painting-images mt-8 md:mt-20">
-          <div class="flex justify-between items-center gap-6">
-            <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
-              <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/craft1.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+          <div class="md:hidden">
+            <div class="swiper mySwiper" style="transition: transform 0.5s ease-in-out;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/craft1.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/craft2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/craft3.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/craft2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/craft1.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                    <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/craft2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
-              <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/craft2.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+            <div class="swiper-pagination bottom-[50%] absolute"></div>
+          </div>
+          <div class="hidden md:block">
+            <div class="flex justify-between items-center gap-6">
+              <div class="relative group  rounded-[56px] border-[#E3E3E3]  overflow-hidden">
+                <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/craft1.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
               </div>
-            </div>
-            <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
-              <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/craft3.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+              <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/craft2.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
+              </div>
+              <div class="relative group  rounded-[56px] border-[#E3E3E3] overflow-hidden">
+                <div class="group-hover:bg-sky-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/craft3.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
               </div>
             </div>
           </div>
@@ -198,5 +316,36 @@
     </div>
   </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".next-btn",
+      prevEl: ".prev-btn",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+
+  });
+</script>
 
 </html>

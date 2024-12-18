@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
 
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- font Fredoka -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,7 +62,7 @@
     <div class="bg-[#FCF4EC] lg:h-[742px] h-[468px] relative">
       <div id="header"></div>
       <section class="breadcrumbs">
-        <div class="container mx-auto max-w-[1440px]">
+        <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
           <div class="flex items-center justify-between h-52 lg:h-96 mt-5">
             <h1
               class="text-[#A023B0] lg:text-[80px] text-[26px] font-fredoka font-medium leading-tight relative ps-5 lg:ps-0">
@@ -90,7 +93,7 @@
     </div>
     <!-- photo gallery section start -->
     <section class="Photo-Gallery py-10 md:py-20">
-      <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
+      <div class="container max-w-[1440px] mx-auto px-5 xxl:px-0">
         <div class="flex items-center justify-between">
           <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight">
             Photo
@@ -172,7 +175,7 @@
       <div class="absolute -z-10 top-[35%]">
         <img src="assets/images/video-gal-bg.png" alt="">
       </div>
-      <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
+      <div class="container max-w-[1440px] mx-auto px-5 xxl:px-0">
         <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight">
           Video
           <span class="relative">Gallery<img src="assets/images/Vector-1.png" alt="Vector Design"
@@ -197,21 +200,31 @@
               </div>
             </div>
           </div>
-          <div class="relative mt-10 md:mt-20">
-            <div class="slider-wrapper flex justify-center items-center"
-              style="transition: transform 0.5s ease-in-out;">
-              <div class="slide">
-                <img src="assets/images/v-1.png" alt="Seven Steps School - Adajan Branch" class="w-auto">
-              </div>
-              <div class="slide">
-                <img src="assets/images/v-2.png" alt="Sunrise Vidyalaya - Godadara Branch" class="w-auto">
-              </div>
-              <div class="slide">
-                <img src="assets/images/v-3.png" alt="Surise Vidyalaya - Dindoli Branch" class="w-auto">
+          <div class="relative mt-10 md:mt-20 xl:px-36">
+            <div class="swiper mySwiper" style="transition: transform 0.5s ease-in-out;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/v-1.png" alt="Seven Steps School - Adajan Branch" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/v-2.png" alt="Sunrise Vidyalaya - Godadara Branch" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/v-3.png" alt="Surise Vidyalaya - Dindoli Branch" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/v-1.png" alt="Seven Steps School - Adajan Branch" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/v-2.png" alt="Sunrise Vidyalaya - Godadara Branch" class="w-full">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/v-3.png" alt="Surise Vidyalaya - Dindoli Branch" class="w-full">
+                </div>
               </div>
             </div>
             <button
-              class="prev-btn  absolute left-[35%] bottom-[-80%] md:top-[48%] md:left-2.5 transform md:-translate-y-1/2 z-20">
+              class="prev-btn  absolute left-[35%] bottom-[-50%] md:top-[48%] md:left-2.5 transform md:-translate-y-1/2 z-20">
               <div class="flex items-center justify-center relative">
                 <img src="assets/images/sliderarrow.png" alt="slider-arrow" class="md:w-full w-[50px]">
                 <svg class="absolute ms-0 w-[18px] h-[18px] md:w-[22px] md:h-[26px]" viewBox="0 0 22 26" fill="none"
@@ -226,7 +239,7 @@
               </div>
             </button>
             <button
-              class="next-btn  absolute right-[35%] bottom-[-80%] md:top-1/2 md:right-10 transform md:-translate-y-1/2 z-20">
+              class="next-btn  absolute right-[35%] bottom-[-50%] md:top-1/2 md:right-10 transform md:-translate-y-1/2 z-20">
               <div class="flex items-center justify-center relative">
                 <img src="assets/images/sliderarrow.png" alt="slider-arrow" class="md:w-full w-[50px]">
                 <svg class="absolute ms-0 w-[18px] h-[18px] md:w-[22px] md:h-[26px]" viewBox="0 0 22 26" fill="none"
@@ -247,7 +260,7 @@
     <!-- Video gallery section End -->
     <!-- Media gallery section Start -->
     <section class="Media-gallery py-10 relative">
-      <div class="container max-w-[1440px] mx-auto px-5 md:px-0">
+      <div class="container max-w-[1440px] mx-auto px-5 xxl:px-0">
         <div class="flex items-center justify-between">
           <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight">
             Media
@@ -270,23 +283,55 @@
           </a>
         </div>
         <div class="student-ach-images mt-8 md:mt-20">
-          <div class="flex justify-between items-center gap-6">
-            <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
-              <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/st-ach-3.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+          <div class="md:hidden">
+            <div class="swiper mySwiperNew">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
+                    <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/st-ach-3.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
+                    <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/paper-2.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
+                    <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
+                      <img src="assets/images/st-ach-3.png" alt="Exam Result"
+                        class="transition-opacity duration-300 group-hover:opacity-50">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
-              <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/paper-2.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+          </div>
+          <div class="hidden md:block">
+            <div class="flex justify-between items-center gap-6">
+              <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
+                <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/st-ach-3.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
               </div>
-            </div>
-            <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
-              <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
-                <img src="assets/images/st-ach-3.png" alt="Exam Result"
-                  class="transition-opacity duration-300 group-hover:opacity-50">
+              <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
+                <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/paper-2.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
+              </div>
+              <div class="relative group border rounded-[56px] border-[#E3E3E3] p-2 overflow-hidden">
+                <div class="group-hover:bg-slate-950 group-hover:cursor-pointer rounded-[56px] transition">
+                  <img src="assets/images/st-ach-3.png" alt="Exam Result"
+                    class="transition-opacity duration-300 group-hover:opacity-50">
+                </div>
               </div>
             </div>
           </div>
@@ -303,5 +348,53 @@
     </div>
   </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".next-btn",
+      prevEl: ".prev-btn",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiperNew", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
 
 </html>

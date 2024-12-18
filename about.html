@@ -17,13 +17,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
 
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- font Fredoka -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
     rel="stylesheet" />
-
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -50,6 +52,7 @@
       },
     };
   </script>
+  
   <script src="assets/js/main.js"></script>
 </head>
 
@@ -59,7 +62,7 @@
     <div class="bg-[#FCF4EC] lg:h-[742px] h-[468px] relative">
       <div id="header"></div>
       <section class="breadcrumbs">
-        <div class="container mx-auto max-w-[1440px]">
+        <div class="container mx-auto max-w-[1440px] px-5 xxl-px-0">
           <div class="flex items-center justify-between h-52 lg:h-96 mt-5">
             <h1
               class="text-[#A023B0] lg:text-[80px] text-[26px] font-fredoka font-medium leading-tight relative ps-5 lg:ps-0">
@@ -93,7 +96,7 @@
     </div>
     <!-- welcome Section start-->
     <section class="welcome-section relative pt-5 pb-5 md:pt-40 md:pb-32">
-      <div class="container mx-auto max-w-[1440px] px-5 md:px-0">
+      <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
         <div class="grid lg:grid-cols-2 gap-5">
           <div class="col-span-1">
             <div class="img-part relative hidden md:block">
@@ -239,7 +242,7 @@
     <!-- welcome Section End-->
     <!-- History Section start-->
     <section class="history-section pt-10 pb-6">
-      <div class="container mx-auto max-w-[1440px] px-5 md:px-0">
+      <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
         <h1
           class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight mb-6 md:mb-11">
           School
@@ -307,27 +310,48 @@
       <div class="absolute left-0 top-0">
         <img src="assets/images/slider-bg.png" alt="">
       </div>
-      <div class="container mx-auto max-w-[1440px]">
-        <div class="relative">
-          <div class="slider-wrapper flex justify-center items-center" style="transition: transform 0.5s ease-in-out;">
-            <div class="slide">
-              <img src="assets/images/slide1.png" alt="Seven Steps School - Adajan Branch">
-              <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Seven Steps School - Adajan
-                <br> Branch
-              </p>
-            </div>
-            <div class="slide">
-              <img src="assets/images/slide2.png" alt="Sunrise Vidyalaya - Godadara Branch">
-              <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Sunrise Vidyalaya - Godadara
-                <br> Branch
-              </p>
-            </div>
-            <div class="slide">
-              <img src="assets/images/slide3.png" alt="Surise Vidyalaya - Dindoli Branch">
-              <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Surise Vidyalaya - Dindoli <br>
-                Branch</p>
+      <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
+        <div class="relative px-36">
+          <div class="swiper mySwiper" style="transition: transform 0.5s ease-in-out;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/slide1.png" alt="Seven Steps School - Adajan Branch">
+                <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Seven Steps School - Adajan
+                  <br> Branch
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/slide2.png" alt="Sunrise Vidyalaya - Godadara Branch">
+                <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Sunrise Vidyalaya - Godadara
+                  <br> Branch
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/slide3.png" alt="Surise Vidyalaya - Dindoli Branch">
+                <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Surise Vidyalaya - Dindoli <br>
+                  Branch</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/slide1.png" alt="Seven Steps School - Adajan Branch">
+                <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Seven Steps School - Adajan
+                  <br> Branch
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/slide2.png" alt="Sunrise Vidyalaya - Godadara Branch">
+                <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Sunrise Vidyalaya - Godadara
+                  <br> Branch
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/slide3.png" alt="Surise Vidyalaya - Dindoli Branch">
+                <p class="text-center mt-7 text-base md:text-2xl font-fredoka font-medium">Surise Vidyalaya - Dindoli <br>
+                  Branch</p>
+              </div>
             </div>
           </div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
           <button
             class="prev-btn  absolute left-[35%] bottom-[-35] md:top-[48%] md:left-2.5 transform md:-translate-y-1/2 z-20">
             <div class="flex items-center justify-center relative">
@@ -364,7 +388,7 @@
     <!-- About-slider Section End-->
     <!-- Mission Section Start-->
     <section class="mission py-5 md:py-12 relative">
-      <div class="container mx-auto max-w-[1440px] px-5 md:px-0">
+      <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
         <div class="flex flex-col lg:flex-row items-center">
           <div class="flex-1">
             <div class="mission-content">
@@ -469,7 +493,7 @@
       <div class="absolute top-0 right-0 -z-10">
         <img src="assets/images/vision-bg.png" alt="">
       </div>
-      <div class="container mx-auto max-w-[1440px] px-5 md:px-0">
+      <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
         <h1
           class="text-2xl md:text-4xl lg:text-5xl font-medium font-fredoka text-[#A023B0] leading-tight mb-6 md:mb-11">
           Our
@@ -511,7 +535,7 @@
     <!-- vision-section  End-->
     <!-- Values section Start-->
     <section class="values md:py-12 relative md:mt-14">
-      <div class="container mx-auto max-w-[1440px] px-5 md:px-0">
+      <div class="container mx-auto max-w-[1440px] px-5 xxl:px-0">
         <div class="flex flex-col lg:flex-row items-center">
           <div class="flex-1">
             <div class="values-content">
@@ -687,7 +711,7 @@
     <!-- Values section End-->
     <!-- Staff section Start-->
     <section class="staff mt-10 md:my-[5rem]">
-      <div class="container mx-auto max-w-[1440px] relative px-5 lg:px-0">
+      <div class="container mx-auto max-w-[1440px] relative px-5 xxl:px-0">
         <h1
           class="lg:text-5xl text-2xl md:text-3xl font-medium font-fredoka text-[#A023B0] leading-tight lg:mb-20 mb:10">
           Meet Our
@@ -728,6 +752,32 @@
       <div id="footer"></div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".next-btn",
+        prevEl: ".prev-btn",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>
